@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Arrmin(x){
+        if(x.length==0)
+            return "mang rong";
+        let min = x[0];
+        for (i=0; i<x.length; i++){
+            if(x[i]<min){
+                min=x[i];
+            }
+        }
+        return min;
+    }
+    let x1=[5,6,8,9,32,-25,-77,-22];
+    let min = Arrmin(x1);
+    alert(min);
+</script>
+
+
+</body>
+</html>

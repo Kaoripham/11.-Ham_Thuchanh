@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>
+        <laber>Nhiet do F: </laber>
+    <input id="DoF" type = number placeholder="Nhap do F"
+           oninput="Chuyennhietdo(this.value)"
+           onchange="Chuyennhietdo(this.value)" // luc chay luc ko
+    >
+    </p>
+    <p> Do C: <span id="DoC"></span></p>
+</form>
+
+
+</body>
+</html>
+<script>
+    function Chuyennhietdo(valNum){
+        valNum = parseFloat(valNum);
+
+        document.getElementById("DoC").innerHTML = (valNum-32)/1.8;
+    }
+</script>
